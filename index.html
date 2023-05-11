@@ -164,6 +164,18 @@
       </div>
   
     </div>
+
+    <div class="news">
+      <h2 style="font-size: large;">News</h2>
+    </div>
+      <div class="con">
+        <div class="im"></div>
+        <div class="txt"></div>
+      </div>
+   
+
+
+
   </div>
 </div>
 
@@ -179,7 +191,30 @@
 
 
 
+<script>
+  const url = 'https://news-api-wine.vercel.app/news?category=';
 
+function getNews() {
+  fetch(url)
+    .then(response => response.json())
+    .then(data => {
+      const content = data.data[0].content;
+      const imageUrl = data.data[0].imageUrl;
+      document.querySelector('.txt').textContent = content;
+      document.querySelector('.im').innerHTML = `<img class = "imim" src="${imageUrl}">`;
+    })
+    .catch(error => console.error(error));
+}
+
+// Call getNews function initially
+getNews();
+
+// Call getNews function every 15 minutes
+setInterval(() => {
+  getNews();
+}, 15 * 60 * 1000); // 15 minutes in milliseconds
+
+</script>
 
 
 

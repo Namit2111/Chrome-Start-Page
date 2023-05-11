@@ -184,7 +184,7 @@ button, a, input {
 }
 
 #search-input-container > input {
-  width: 100%;
+  width: 27.2rem;
   height: 3.25rem;
   background-color: transparent;
   padding: 1rem;  
@@ -380,8 +380,8 @@ button, a, input {
   justify-content: center;
   align-items: center;
   outline: none;
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
   text-decoration: none;
   border-radius: 100%;
   background: #fff;
@@ -723,7 +723,7 @@ a:hover {
 .parent {
   border: 1px solid black;
   margin: 1rem;
-  padding: 2rem 2rem;
+  padding: 1rem 2rem;
   text-align: center;
 }
 .child {

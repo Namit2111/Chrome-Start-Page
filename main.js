@@ -1,14 +1,14 @@
 
 
-const editableText= document.getElementById('editable-text');
+// const editableText= document.getElementById('editable-text');
 
-if(localStorage.getItem('savedText')){
-  editableText.textContent=localStorage.getItem('savedText');
-}
+// if(localStorage.getItem('savedText')){
+//   editableText.textContent=localStorage.getItem('savedText');
+// }
 
 
-editableText.addEventListener('input', function(){
+// editableText.addEventListener('input', function(){
 
-  localStorage.setItem('savedText',this.textContent);
-})
+//   localStorage.setItem('savedText',this.textContent);
+// })
 

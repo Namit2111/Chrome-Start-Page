@@ -176,12 +176,32 @@
 
 
 
+<div class="weather">
+  <div class="head" onclick="toggleCard()">Weather</div>
+  <div class="w-main"  id ="w-main">
+  <div class="city"><p id = "city">Landran</p>
+  <p id = "day">Day</p></div>
+  <div class="icon"><i class="fa fa-light fa fa-sun fa-10x"></i></div>
+  <div class="temp"><h1 id = "temp">23'c</h1>
+  <p if = "condition">stormy</p></div>
+</div>
+</div>
+
+
   </div>
 </div>
 
 
 
 
+
+<script>
+function toggleCard() {
+  const cardContent = document.getElementById("w-main");
+  cardContent.classList.toggle("show");
+}
+
+</script>
 
 
 

@@ -1116,3 +1116,66 @@ padding: 1rem 0.75rem;
   padding-top: 2rem;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Droid Sans", "Helvetica Neue", Arial, sans-serif;
 }
+
+
+
+
+
+
+
+.weather{
+  transition: height 0.3s ease-in-out;
+  position: fixed;
+  z-index: 22;
+  top: 1.1rem;
+left: 5rem;}
+.head{
+  width: 18rem;
+  text-align: center;
+  border-radius: 0.2rem;
+  padding: 1rem 0.75rem;
+  background-color: rgb(255 255 255 / 5%);
+  color: white;
+  font-size: larger;
+}
+.w-main{
+  margin-top: 0.5rem;
+  text-align: center;
+  background-color: rgba(255,255,255,10%);
+display: none;
+transition: max-height 0.3s ease-in-out;
+}
+.w-main.show{
+  display: block;
+  max-height: 60rem;
+}
+.city{
+  /* margin-top: 2rem; */
+  padding-top: 0.4rem;
+  line-height: 3rem;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+
+#city{
+  font-size: 43px;
+}
+
+#day{
+  font-size: 23px;
+}
+#temp{
+  font-size: 73px;
+}
+#condition{
+  font-size: 25px;
+}
+.icon{
+ margin-top: 1rem;
+ margin-bottom: 1rem;
+}
+.temp{
+  line-height: 4rem;
+}
